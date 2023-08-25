@@ -4,10 +4,16 @@ let nome = document.getElementById("nome");
 let prof = document.getElementById("profissao");
 
 function adc(){
-    nomes.push(nome.value.toLowerCase());
-    profissoes.push(prof.value.toLowerCase());
-    console.log(nomes, profissoes);
-    alert("Registro adicionado com sucesso!")
+    let pos = nomes.indexOf(nome.value.toLowerCase());
+    if(pos == -1){
+        nomes.push(nome.value.toLowerCase());
+        profissoes.push(prof.value.toLowerCase());
+        console.log(nomes, profissoes);
+        alert("Registro adicionado com sucesso!")
+    } else{
+        console.log("O nome "+nome+" já está cadastrado!");
+        alert("O nome "+nome+" já está cadastrado!");
+    }
 }
 
 function rmv(){
