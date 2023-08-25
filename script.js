@@ -11,8 +11,8 @@ function adc(){
         console.log(nomes, profissoes);
         alert("Registro adicionado com sucesso!")
     } else{
-        console.log("O nome "+nome+" já está cadastrado!");
-        alert("O nome "+nome+" já está cadastrado!");
+        console.log("O nome "+nome.value+" já está cadastrado!");
+        alert("O nome "+nome.value+" já está cadastrado!");
     }
 }
 
